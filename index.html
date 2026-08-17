@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusmu - AI, Marketing, SEO & Free Developer Tools</title>
+    <meta name="google-site-verification" content="JMBLiWReD5Kdjkurc_P0wJLqDSilfJeszQrqiTS_eo8" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9700222423349703"
+    crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-9700222423349703">
+    <script async custom-element="amp-auto-ads"
+    src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+    
+    
+    <!-- Kode standar untuk file .ico -->
+    <link rel="icon" type="image/x-icon" href="https://rumusmu.github.io/rumusmu.jpg">
+    <link rel="icon" type="image/x-icon" href="https://rumusmu.github.io/Rumusmu.png">
+    
+    <!-- Kode alternatif yang lebih modern menggunakan file .png -->
+    <link rel="icon" type="image/png" href="https://rumusmu.github.io/Rumusmu.png">
+    <link rel="icon" type="image/png" href="https://rumusmu.github.io/rumusmu.jpg">
+    
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="rumusmu - Modern AI, Marketing & Developer Tools Platform">
+    <meta property="og:description" content="Discover advanced AI solutions, marketing strategies, SEO pillars, and a comprehensive suite of developer & utility tools.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:url" content="https://rumusmu.github.io">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "rumusmu",
+      "url": "https://rumusmu.github.io",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://rumusmu.github.io/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <style>
+        /* Rainbow Hover Border Animation */
+        @keyframes rainbowBorder {
+            0% { border-color: #ff0000; box-shadow: 0 0 15px rgba(255, 0, 0, 0.4); }
+            14% { border-color: #ff7f00; box-shadow: 0 0 15px rgba(255, 127, 0, 0.4); }
+            28% { border-color: #ffff00; box-shadow: 0 0 15px rgba(255, 255, 0, 0.4); }
+            42% { border-color: #00ff00; box-shadow: 0 0 15px rgba(0, 255, 0, 0.4); }
+            57% { border-color: #0000ff; box-shadow: 0 0 15px rgba(0, 0, 255, 0.4); }
+            71% { border-color: #4b0082; box-shadow: 0 0 15px rgba(75, 0, 130, 0.4); }
+            85% { border-color: #8b00ff; box-shadow: 0 0 15px rgba(139, 0, 255, 0.4); }
+            100% { border-color: #ff0000; box-shadow: 0 0 15px rgba(255, 0, 0, 0.4); }
+        }
+
+        .rainbow-card:hover {
+            border-width: 2px;
+            animation: rainbowBorder 3s infinite linear;
+        }
+
+        /* Typing Cursor */
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 font-sans">
+
+    <!-- TOP BAR & HEADER -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white shadow-lg shadow-indigo-500/30">
+                    <i class="fa-solid fa-cube text-xl"></i>
+                </div>
+                <span class="text-xl font-black bg-gradient-to-r from-indigo-600 to-violet-500 bg-clip-text text-transparent">Rumusmu</span>
+            </div>
+
+            <!-- Navigation Desktop -->
+            <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium">
+                <a href="#home" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Home</a>
+                
+                <!-- Dropdown Categories -->
+                <div class="relative group">
+                    <button class="flex items-center space-x-1 hover:text-indigo-600 dark:hover:text-indigo-400 py-2">
+                        <span>Categories</span>
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="absolute top-full left-0 w-64 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl rounded-xl p-3 hidden group-hover:grid grid-cols-1 gap-2">
+                        <a href="#ai" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition">Artificial Intelligence (AI)</a>
+                        <a href="#marketing" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition">Content Marketing</a>
+                        <a href="#ecommerce" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition">E-Commerce</a>
+                        <a href="#seo" class="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition">Search Engine Optimization</a>
+                    </div>
+                </div>
+
+                <!-- Dropdown Tools -->
+                <div class="relative group">
+                    <button class="flex items-center space-x-1 hover:text-indigo-600 dark:hover:text-indigo-400 py-2">
+                        <span>Tools Hub</span>
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="absolute top-full left-0 w-72 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xl rounded-xl p-3 hidden group-hover:grid grid-cols-1 gap-1 max-h-96 overflow-y-auto">
+                        <a href="#tools" class="p-2 text-xs rounded hover:bg-slate-100 dark:hover:bg-slate-800">Algorithmic All</a>
+                        <a href="#tools" class="p-2 text-xs rounded hover:bg-slate-100 dark:hover:bg-slate-800">Developer Tools</a>
+                        <a href="#tools" class="p-2 text-xs rounded hover:bg-slate-100 dark:hover:bg-slate-800">Math & Calculators</a>
+                        <a href="#tools" class="p-2 text-xs rounded hover:bg-slate-100 dark:hover:bg-slate-800">CSS & Design</a>
+                        <a href="#tools" class="p-2 text-xs rounded hover:bg-slate-100 dark:hover:bg-slate-800">Image Tools</a>
+                        <a href="#tools" class="p-2 text-xs rounded hover:bg-slate-100 dark:hover:bg-slate-800">Text Tools & Arabic Text</a>
+                        <a href="#tools" class="p-2 text-xs rounded hover:bg-slate-100 dark:hover:bg-slate-800">SEO & Marketing Tools</a>
+                    </div>
+                </div>
+
+                <a href="#article" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">Articles</a>
+                <a href="#about" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition">About</a>
+            </nav>
+
+            <!-- Actions Header -->
+            <div class="flex items-center space-x-4">
+                <!-- Light/Dark Toggle -->
+                <button id="theme-toggle" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:ring-2 ring-indigo-500 transition">
+                    <i class="fa-solid fa-moon dark:hidden text-slate-700"></i>
+                    <i class="fa-solid fa-sun hidden dark:block text-yellow-400"></i>
+                </button>
+
+                <!-- Dropdown Download Button -->
+                <div class="relative group">
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2.5 rounded-xl font-medium text-sm flex items-center space-x-2 shadow-lg shadow-indigo-600/30 transition">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Download</span>
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </button>
+                    <div class="absolute right-0 top-full mt-2 w-48 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-xl p-2 hidden group-hover:block">
+                        <a href="#" class="block px-3 py-2 text-sm rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">Download Source Code</a>
+                        <a href="#" class="block px-3 py-2 text-sm rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">PDF Documentation</a>
+                        <a href="#" class="block px-3 py-2 text-sm rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">Extension Plugin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION WITH SLIDER & TYPING TEXT -->
+    <section id="home" class="relative py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block px-3 py-1 rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Next-Generation Ecosystem
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Empowering Your <span class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent typing-text" id="typing-heading"></span><span class="typing-cursor"></span>
+                </h1>
+                <p class="text-lg text-slate-600 dark:text-slate-400 mb-8">
+                    Explore high-performance AI tools, comprehensive marketing methodologies, developer toolkits, and expertly curated articles engineered for maximum SEO growth.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#tools" class="px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold shadow-lg shadow-indigo-600/30 transition">Explore All Tools</a>
+                    <a href="#article" class="px-6 py-3.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-indigo-500 font-semibold transition">Read Articles</a>
+                </div>
+            </div>
+
+            <!-- Slider Card -->
+            <div class="relative">
+                <div class="relative w-full h-80 sm:h-96 rounded-3xl overflow-hidden shadow-2xl border border-slate-200 dark:border-slate-800">
+                    <div id="slider-container" class="absolute inset-0 flex transition-transform duration-700 ease-in-out">
+                        <div class="min-w-full h-full relative bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop')">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-8">
+                                <h3 class="text-white text-xl font-bold">Artificial Intelligence & Automation</h3>
+                            </div>
+                        </div>
+                        <div class="min-w-full h-full relative bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop')">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-8">
+                                <h3 class="text-white text-xl font-bold">Advanced Search Engine Optimization (SEO)</h3>
+                            </div>
+                        </div>
+                        <div class="min-w-full h-full relative bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop')">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-8">
+                                <h3 class="text-white text-xl font-bold">Comprehensive Developer & Utility Tools</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES CARDS WITH RAINBOW HOVER -->
+    <section id="categories" class="py-16 bg-slate-100 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold mb-4">Core Categories</h2>
+                <p class="text-slate-600 dark:text-slate-400">Discover categorized modules and resources tailored to modern digital demands.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 rainbow-card transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Artificial Intelligence (AI)</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Machine learning models, generative AI integrations, and automated workflows.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 rainbow-card transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-950 text-purple-600 dark:text-purple-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Content Marketing</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Data-driven storytelling, content planning, and viral reach frameworks.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 rainbow-card transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-pink-100 dark:bg-pink-950 text-pink-600 dark:text-pink-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">E-Commerce & ERP</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Enterprise Resource Planning, checkout conversion optimization, and logistics.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 rainbow-card transition duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-950 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">Search Engine Optimization</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Technical SEO, keyword clustering, and algorithmic visibility tactics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOOLS GRID SECTION -->
+    <section id="tools" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-3xl font-bold mb-4">Comprehensive Tools Directory</h2>
+            <p class="text-slate-600 dark:text-slate-400">Access our complete library of utilities categorized for maximum productivity.</p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <!-- Tool Item -->
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-code text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Developer Tools</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-calculator text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Math & Calculators</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-palette text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">CSS & Design</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-image text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Image Tools</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-toolbox text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Fun & Utility</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-font text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Text Tools</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-shield-halved text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Security Tools</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-calendar-days text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Date & Time</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-wallet text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Finance & Money</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-file-pdf text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">PDF Tools</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-video text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Video & Audio</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-briefcase text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Business & Freelance</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-chart-line text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">SEO & Marketing</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-house text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Home & Lifestyle</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-heart-pulse text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Health & Medical</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-graduation-cap text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Education & Students</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-atom text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Science & Engineering</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-globe text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">MENA Tools & Arabic Text</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-music text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Music & Audio</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-plane text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Travel & Geography</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-building text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Construction & Real Estate</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-table text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Data & Spreadsheet</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-share-nodes text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Social Media Tools</h4>
+            </div>
+            <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center hover:border-indigo-500 transition cursor-pointer">
+                <i class="fa-solid fa-network-wired text-indigo-600 mb-2 text-xl"></i>
+                <h4 class="text-xs font-semibold">Network Tools & Algorithmic</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENGLISH SEO ARTICLE SECTION (WITH TOC, QUOTES, FAQ, CONCLUSION, ABOUT) -->
+    <section id="article" class="py-16 bg-slate-100 dark:bg-slate-900/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 sm:p-12 shadow-xl">
+            
+            <h1 class="text-3xl sm:text-4xl font-extrabold mb-6">Mastering Modern SEO, Artificial Intelligence, and Digital Productivity in 2026</h1>
+            <p class="text-slate-600 dark:text-slate-400 mb-8 italic">Published by rumusmu Editorial Team • 8 min read</p>
+
+            <!-- Table of Contents (TOC) -->
+            <div class="bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 mb-10">
+                <h3 class="text-lg font-bold mb-3 flex items-center space-x-2">
+                    <i class="fa-solid fa-list text-indigo-600"></i>
+                    <span>Table of Contents</span>
+                </h3>
+                <ul class="space-y-2 text-sm text-indigo-600 dark:text-indigo-400 font-medium">
+                    <li><a href="#pillar-1" class="hover:underline">1. The Evolution of Search Engine Optimization (SEO Pillars)</a></li>
+                    <li><a href="#pillar-2" class="hover:underline">2. Artificial Intelligence in Content Marketing & Workflow Automation</a></li>
+                    <li><a href="#pillar-3" class="hover:underline">3. Enterprise Resource Planning and E-Commerce Synergy</a></li>
+                    <li><a href="#faq" class="hover:underline">4. Frequently Asked Questions (FAQ)</a></li>
+                    <li><a href="#conclusion" class="hover:underline">5. Conclusion & Final Thoughts</a></li>
+                </ul>
+            </div>
+
+            <!-- Share Buttons -->
+            <div class="flex items-center space-x-3 mb-10 pb-6 border-b border-slate-200 dark:border-slate-800">
+                <span class="text-sm font-semibold">Share this article:</span>
+                <button class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center hover:opacity-90 transition"><i class="fa-brands fa-twitter text-sm"></i></button>
+                <button class="w-9 h-9 rounded-full bg-blue-800 text-white flex items-center justify-center hover:opacity-90 transition"><i class="fa-brands fa-linkedin-in text-sm"></i></button>
+                <button class="w-9 h-9 rounded-full bg-emerald-600 text-white flex items-center justify-center hover:opacity-90 transition"><i class="fa-brands fa-whatsapp text-sm"></i></button>
+            </div>
+
+            <!-- Content Body -->
+            <div class="space-y-8 text-slate-700 dark:text-slate-300 leading-relaxed">
+                <h2 id="pillar-1" class="text-2xl font-bold text-slate-900 dark:text-white">1. The Evolution of Search Engine Optimization (SEO Pillars)</h2>
+                <p>
+                    Search Engine Optimization has moved far beyond simple keyword stuffing and backlink counts. Modern algorithmic updates demand semantic relevance, core web vitals optimization, and authoritative EEAT (Experience, Expertise, Authoritativeness, and Trustworthiness) standards.
+                </p>
+
+                <!-- Quote / Qoution Component -->
+                <blockquote class="border-l-4 border-indigo-600 pl-6 py-4 my-6 bg-indigo-50/50 dark:bg-indigo-950/30 rounded-r-xl italic text-slate-800 dark:text-slate-200 font-medium">
+                    "SEO is no longer just about tricking an algorithm; it is about engineering a seamless digital experience that satisfies user intent instantaneously."
+                    <span class="block mt-2 text-xs font-bold text-indigo-600 dark:text-indigo-400 not-italic">— Dr. Alexander Vance, Search Algorithm Strategist</span>
+                </blockquote>
+
+                <h2 id="pillar-2" class="text-2xl font-bold text-slate-900 dark:text-white">2. Artificial Intelligence in Content Marketing & Workflow Automation</h2>
+                <p>
+                    Integrating AI into content marketing pipelines allows brands to scale personalization and production without sacrificing quality. From predictive analytics in influencer marketing to automated copywriting assistants, AI acts as an amplifier of human creativity.
+                </p>
+
+                <h2 id="pillar-3" class="text-2xl font-bold text-slate-900 dark:text-white">3. Enterprise Resource Planning and E-Commerce Synergy</h2>
+                <p>
+                    E-commerce platforms handling thousands of transactions daily require robust Enterprise Resource Planning (ERP) backbones. Real-time inventory synchronization, automated tax calculations, and predictive supply chain modeling ensure operational resilience.
+                </p>
+
+                <!-- FAQ Section -->
+                <div id="faq" class="pt-8 border-t border-slate-200 dark:border-slate-800">
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-6">Frequently Asked Questions (FAQ)</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="p-5 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700">
+                            <h4 class="font-bold mb-2 text-slate-900 dark:text-white">How does AI impact modern SEO strategies?</h4>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">AI helps analyze search intent patterns at scale, optimize internal linking structures, and generate precise topic clusters that answer user queries efficiently.</p>
+                        </div>
+                        <div class="p-5 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-slate-200 dark:border-slate-700">
+                            <h4 class="font-bold mb-2 text-slate-900 dark:text-white">Are all tools on rumusmu free to use?</h4>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Yes, our developer utility tools, math calculators, and CSS generators are entirely free and accessible online.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conclusion -->
+                <div id="conclusion" class="pt-6">
+                    <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">Conclusion</h3>
+                    <p>
+                        Embracing technological integration across SEO, artificial intelligence, and automated enterprise frameworks is vital for long-term digital growth. By utilizing the right toolkits and maintaining rigorous optimization standards, organizations can navigate future market shifts with confidence.
+                    </p>
+                </div>
+
+                <!-- About Author Box -->
+                <div id="about" class="mt-12 p-6 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 rounded-2xl flex items-center space-x-6">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop" alt="Author" class="w-20 h-20 rounded-full object-cover shadow-md">
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900 dark:text-white">About the Author</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- FOOTER -->
+    <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+    <div>
+    <div class="flex items-center space-x-3 mb-4">
+    <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white">
+    <i class="fa-solid fa-cube"></i>
+    </div>
+    <span class="text-lg font-bold">Rumusmu Hub Ltd.</span>
+    </div>
+    <p class="text-sm text-slate-600 dark:text-slate-400">
+    Registered in Delaware, USA (Ltd. #8932410). Providing world-class developer utilities and digital marketing frameworks.
+    </p>
+    </div>
+    <div>
+    <h4 class="font-bold text-sm mb-4 uppercase tracking-wider">Quick Links</h4>
+    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+    <li><a href="#home" class="hover:text-indigo-600 transition">Home</a></li>
+    <li><a href="#categories" class="hover:text-indigo-600 transition">Categories</a></li>
+    <li><a href="#tools" class="hover:text-indigo-600 transition">Tools Directory</a></li>
+    <li><a href="#article" class="hover:text-indigo-600 transition">Articles & SEO</a></li>
+    </ul>
+    </div>
+    <div>
+    <h4 class="font-bold text-sm mb-4 uppercase tracking-wider">Legal & Compliance</h4>
+    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+    <li><a href="#" class="hover:text-indigo-600 transition">Privacy Policy</a></li>
+    <li><a href="#" class="hover:text-indigo-600 transition">Terms of Service</a></li>
+    <li><a href="#" class="hover:text-indigo-600 transition">Cookie Settings</a></li>
+    <li><a href="#" class="hover:text-indigo-600 transition">Ltd. Disclaimers</a></li>
+    </ul>
+    </div>
+    <div>
+    <h4 class="font-bold text-sm mb-4 uppercase tracking-wider">Subscribe Newsletter</h4>
+    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Get weekly AI & tool updates directly to your inbox.</p>
+    <form class="flex gap-2">
+    <input type="email" placeholder="Your email" class="px-4 py-2 bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl text-sm w-full focus:outline-none focus:ring-2 ring-indigo-500">
+    <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl text-sm font-medium transition">Join</button>
+    </form>
+    </div>
+    </div>
+    
+    <div class="border-t border-slate-200 dark:border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+    <p>&copy; 2026 Rumusmu Hub Ltd. All rights reserved.</p>
+    <div class="flex space-x-6 mt-4 sm:mt-0">
+    <a href="#" class="hover:text-indigo-600"><i class="fa-brands fa-github text-base"></i></a>
+    <a href="#" class="hover:text-indigo-600"><i class="fa-brands fa-twitter text-base"></i></a>
+    <a href="#" class="hover:text-indigo-600"><i class="fa-brands fa-linkedin text-base"></i></a>
+    </div>
+    </div>
+    </div>
+    </footer>
+    <!-- COOKIES BANNER -->
+    <div id="cookie-banner" class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-4 sm:max-w-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-2xl shadow-2xl z-50 flex flex-col gap-3">
+    <div class="flex items-start space-x-3">
+    <i class="fa-solid fa-cookie-bite text-2xl text-amber-500 mt-1"></i>
+    <div>
+    <h4 class="font-bold text-sm">Cookie Notice</h4>
+    <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">
+    We use cookies to enhance your browsing experience, analyze site traffic, and serve personalized content. Read our <a href="#" class="underline text-indigo-600">Cookie Policy</a>.
+    </p>
+    </div>
+    </div>
+    <div class="flex justify-end space-x-2 mt-2">
+    <button id="accept-cookies" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold rounded-xl transition">Accept All</button>
+    <button id="decline-cookies" class="px-4 py-2 border border-slate-300 dark:border-slate-700 text-xs font-semibold rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition">Decline</button>
+    </div>
+    </div>
+    
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+    // Light / Dark Mode Toggle
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+    
+    // Check stored theme or system preference
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    htmlElement.classList.add('dark');
+    } else {
+    htmlElement.classList.remove('dark');
+    }
+    
+    themeToggleBtn.addEventListener('click', () => {
+    if (htmlElement.classList.contains('dark')) {
+    htmlElement.classList.remove('dark');
+    localStorage.theme = 'light';
+    } else {
+    htmlElement.classList.add('dark');
+    localStorage.theme = 'dark';
+    }
+    });
+    
+    // Typing Effect
+    const words = ["Artificial Intelligence", "Content Marketing", "Digital Solutions", "Developer Toolkits"];
+    let i = 0;
+    let timer;
+    
+    function typingEffect() {
+    let word = words[i].split("");
+    var loopTyping = function() {
+    if (word.length > 0) {
+    document.getElementById('typing-heading').innerHTML += word.shift();
+    } else {
+    setTimeout(deletingEffect, 2000);
+    return false;
+    }
+    timer = setTimeout(loopTyping, 100);
+    };
+    loopTyping();
+    }
+    
+    function deletingEffect() {
+    let word = words[i].split("");
+    var loopDeleting = function() {
+    if (word.length > 0) {
+    word.pop();
+    document.getElementById('typing-heading').innerHTML = word.join("");
+    } else {
+    if (words.length > (i + 1)) {
+    i++;
+    } else {
+    i = 0;
+    }
+    setTimeout(typingEffect, 500);
+    return false;
+    }
+    timer = setTimeout(loopDeleting, 50);
+    };
+    loopDeleting();
+    }
+    typingEffect();
+    
+    // Hero Slider Auto Scroll
+    const sliderContainer = document.getElementById('slider-container');
+    let slideIndex = 0;
+    const totalSlides = sliderContainer.children.length;
+    
+    setInterval(() => {
+    slideIndex = (slideIndex + 1) % totalSlides;
+    sliderContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
+    }, 4000);
+    
+    // Cookies Banner Dismissal
+    const cookieBanner = document.getElementById('cookie-banner');
+    document.getElementById('accept-cookies').addEventListener('click', () => {
+    cookieBanner.style.display = 'none';
+    localStorage.setItem('cookies_accepted', 'true');
+    });
+    document.getElementById('decline-cookies').addEventListener('click', () => {
+    cookieBanner.style.display = 'none';
+    });
+    
+    if (localStorage.getItem('cookies_accepted') === 'true') {
+    cookieBanner.style.display = 'none';
+    }
+    </script>
+    <amp-auto-ads type="adsense"
+    data-ad-client="ca-pub-9700222423349703">
+    </amp-auto-ads>
+</body>
+</html>
