@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumusmu - AI, Marketing, SEO & Free Developer Tools</title>
+    <meta name="description" content="Discover advanced AI solutions, marketing strategies, SEO pillars, and a comprehensive suite of developer & utility tools." />
+    <meta name="keywords" content="Rumusmu, Ai, Seo, tools, Free, Developer Tools, Coding Roadmaps" />
+    <meta name="google-site-verification" content="JMBLiWReD5Kdjkurc_P0wJLqDSilfJeszQrqiTS_eo8" />
+    <link rel="canonical" href="https://rumusmu.github.io/developer/index.html" />
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9700222423349703" crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-9700222423349703">
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="https://rumusmu.github.io/rumusmu.jpg">
+    <link rel="icon" type="image/x-icon" href="https://rumusmu.github.io/Rumusmu.png">
+    <link rel="icon" type="image/png" href="https://rumusmu.github.io/Rumusmu.png">
+    <link rel="icon" type="image/png" href="https://rumusmu.github.io/rumusmu.jpg">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Rumusmu - Modern AI, Marketing & Developer Tools Platform">
+    <meta property="og:description" content="Discover advanced AI solutions, marketing strategies, SEO pillars, and a comprehensive suite of developer & utility tools.">
+    <meta property="og:image" content="https://rumusmu.github.io/Rumusmu.png">
+    <meta property="og:url" content="https://rumusmu.github.io/devoloper/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- JSON-LD Structured Data (WebSite & FAQ Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "rumusmu",
+      "url": "https://rumusmu.github.io/devoloper/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://rumusmu.github.io/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the best free resources to learn coding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The best free resources to learn coding include freeCodeCamp for web development, Kaggle Learn for machine learning, The Odin Project for full-stack development, and LeetCode for interview preparation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do roadmaps help in software development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Roadmaps provide structured step-by-step guides for different tech careers, helping beginners avoid tutorial hell and focus on job-ready skills."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="#home" class="flex items-center space-x-2">
+                    <img src="https://rumusmu.github.io/Rumusmu.png" alt="Rumusmu Logo" class="w-10 h-10 rounded-xl object-cover border border-indigo-500/30 shadow-sm">
+                    <span class="text-xl font-extrabold bg-gradient-to-r from-indigo-600 to-violet-500 bg-clip-text text-transparent">Rumusmu</span>
+                </a>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                <a href="#home" class="hover:text-indigo-600 transition">Home</a>
+                <a href="#learning-paths" class="hover:text-indigo-600 transition">Learning Paths</a>
+                <a href="#categories" class="hover:text-indigo-600 transition">Categories</a>
+                <a href="#article" class="hover:text-indigo-600 transition">Article & FAQs</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition cursor-pointer" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon dark:hidden text-base"></i>
+                    <i class="fa-solid fa-sun hidden dark:block text-base"></i>
+                </button>
+                <a href="#learning-paths" class="hidden sm:inline-flex bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl text-sm font-semibold transition shadow-md shadow-indigo-600/20">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative pt-20 pb-16 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-flex items-center space-x-2 bg-indigo-50 dark:bg-indigo-950/50 border border-indigo-200 dark:border-indigo-800 px-3.5 py-1.5 rounded-full text-indigo-600 dark:text-indigo-400 text-xs font-semibold mb-6">
+                <i class="fa-solid fa-sparkles"></i>
+                <span>Curated Developer Tools & Learning Paths</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight mb-6">
+                Curated Learning Paths & Free Resources to Take You From Beginner to <span class="bg-gradient-to-r from-indigo-600 to-violet-500 bg-clip-text text-transparent">Job-Ready Developer</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10">
+                All resources are hand-picked by the DevUp community to provide a comprehensive suite of developer & utility tools.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#categories" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3.5 rounded-2xl shadow-lg shadow-indigo-600/30 transition">Explore Categories</a>
+                <a href="#article" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 font-semibold px-8 py-3.5 rounded-2xl transition">Read Free Guide</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARNING PATHS HIGHLIGHT -->
+    <section id="learning-paths" class="py-16 bg-slate-100/50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                <div class="lg:col-span-1">
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-4">Master In-Demand Tech Skills</h2>
+                    <p class="text-slate-600 dark:text-slate-400 mb-6">Follow industry-vetted roadmaps and modern tooling frameworks designed to fast-track your software engineering career.</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex -space-x-2">
+                            <img src="https://rumusmu.github.io/Rumusmu.png" class="w-10 h-10 rounded-full border-2 border-white dark:border-slate-900 object-cover" alt="User">
+                            <img src="https://rumusmu.github.io/rumusmu.jpg" class="w-10 h-10 rounded-full border-2 border-white dark:border-slate-900 object-cover" alt="User">
+                        </div>
+                        <div class="text-sm">
+                            <p class="font-bold">100% Free & Open</p>
+                            <p class="text-slate-500">Trusted by thousands of devs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-4">
+                    <a href="#web-dev" class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-indigo-500 transition shadow-sm group">
+                        <i class="fa-solid fa-code text-2xl text-indigo-600 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-sm">Web Development</h3>
+                    </a>
+                    <a href="#devops" class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-indigo-500 transition shadow-sm group">
+                        <i class="fa-solid fa-server text-2xl text-indigo-600 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-sm">DevOps & Cloud</h3>
+                    </a>
+                    <a href="#ai-ml" class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-indigo-500 transition shadow-sm group">
+                        <i class="fa-solid fa-brain text-2xl text-indigo-600 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-sm">AI & Machine Learning</h3>
+                    </a>
+                    <a href="#mobile-dev" class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-indigo-500 transition shadow-sm group">
+                        <i class="fa-solid fa-mobile-screen text-2xl text-indigo-600 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-sm">Mobile Development</h3>
+                    </a>
+                    <a href="#open-source" class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-indigo-500 transition shadow-sm group">
+                        <i class="fa-solid fa-code-pull-request text-2xl text-indigo-600 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-sm">Open Source</h3>
+                    </a>
+                    <a href="#career" class="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-indigo-500 transition shadow-sm group">
+                        <i class="fa-solid fa-briefcase text-2xl text-indigo-600 mb-3 group-hover:scale-110 transition-transform"></i>
+                        <h3 class="font-bold text-sm">Career & Interview</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES & RESOURCES DIRECTORY -->
+    <main id="categories" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold mb-4">Resource Categories</h2>
+                <p class="text-slate-600 dark:text-slate-400">Deep dive into specific domains with expertly curated topics and framework breakdowns.</p>
+            </div>
+
+            <div class="space-y-16">
+                <!-- Web Development -->
+                <div id="web-dev" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-10 shadow-sm">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-indigo-50 dark:bg-indigo-950 text-indigo-600 rounded-2xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Web Development</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Full-stack web development resources from HTML basics to React, Node.js, and deployment.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">HTML</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">CSS</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">JavaScript</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">React</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Next.js</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Node.js</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Databases</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">APIs</div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Cloud -->
+                <div id="devops" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-10 shadow-sm">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-indigo-50 dark:bg-indigo-950 text-indigo-600 rounded-2xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">DevOps & Cloud</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Cloud computing, containerization, CI/CD, and infrastructure automation resources.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Linux</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Docker</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Kubernetes</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">AWS</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">GitHub Actions</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Terraform</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Monitoring</div>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div id="ai-ml" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-10 shadow-sm">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-indigo-50 dark:bg-indigo-950 text-indigo-600 rounded-2xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">AI & Machine Learning</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Artificial intelligence, machine learning, deep learning, and LLM development resources.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Python</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">NumPy</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Pandas</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Scikit-learn</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">PyTorch</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">TensorFlow</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">LLMs</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Computer Vision</div>
+                    </div>
+                </div>
+
+                <!-- Mobile Development -->
+                <div id="mobile-dev" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-10 shadow-sm">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-indigo-50 dark:bg-indigo-950 text-indigo-600 rounded-2xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-mobile"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Mobile Development</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">iOS, Android, and cross-platform mobile app development resources.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">React Native</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Flutter</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Swift</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Kotlin</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Expo</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Firebase</div>
+                    </div>
+                </div>
+
+                <!-- Open Source Contribution -->
+                <div id="open-source" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-10 shadow-sm">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-indigo-50 dark:bg-indigo-950 text-indigo-600 rounded-2xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Open Source Contribution</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Learn how to contribute to open source projects and build your developer reputation.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Git</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">GitHub</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Code Review</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Documentation</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Issue Tracking</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Community</div>
+                    </div>
+                </div>
+
+                <!-- Career & Interview Prep -->
+                <div id="career" class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-10 shadow-sm">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-12 h-12 bg-indigo-50 dark:bg-indigo-950 text-indigo-600 rounded-2xl flex items-center justify-center text-xl font-bold">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Career & Interview Prep</h3>
+                            <p class="text-sm text-slate-600 dark:text-slate-400">Data structures, algorithms, system design, and interview preparation resources.</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">DSA</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">System Design Domain</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Behavioral Interviews</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Resume Optimization</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Portfolio Builders</div>
+                        <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200/60 dark:border-slate-700/60 font-semibold text-center hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition">Networking Groups</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- LONG ARTICLE & FAQ DROPDOWNS SECTION -->
+    <section id="article" class="py-16 bg-slate-100/50 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 sm:p-12 shadow-sm space-y-8">
+                
+                <article class="space-y-6 text-slate-700 dark:text-slate-300">
+                    <h2 class="text-3xl font-extrabold text-slate-900 dark:text-slate-100">Comprehensive Guide: Mastering Software Engineering Through Free Platforms</h2>
+                    
+                    <p class="leading-relaxed">
+                        Embarking on a career in software development can be overwhelming without a structured roadmap. Fortunately, the open-source and developer education ecosystem provides world-class platforms to help you transition from an absolute beginner to a confident, job-ready engineer. Organizations like 
+                        <a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 underline font-medium">freeCodeCamp</a> 
+                        offer accessible pathways into interactive web programming.
+                    </p>
+
+                    <p class="leading-relaxed">
+                        When looking for complete full-stack blueprints, platforms such as 
+                        <a href="https://www.theodinproject.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 underline font-medium">The Odin Project</a> 
+                        and 
+                        <a href="https://roadmap.sh" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 underline font-medium">roadmap.sh</a> 
+                        deliver rigorous, community-vetted curriculums. Furthermore, building practical skills requires continuous coding practice on sites like 
+                        <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 underline font-medium">LeetCode</a> 
+                        and 
+                        <a href="https://www.hackerrank.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 underline font-medium">HackerRank</a>.
+                    </p>
+
+                    <p class="leading-relaxed">
+                        Data science and machine learning enthusiasts can leverage interactive cloud labs via 
+                        <a href="https://www.kaggle.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 underline font-medium">Kaggle Learn</a> 
+                        and explore deep learning foundations through 
+                        <a href="https://www.fast.ai" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 underline font-medium">Fast.ai</a>. To manage codebases and participate in community building, mastering version control through 
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 underline font-medium">GitHub</a> 
+                        is non-negotiable. Finally, expanding your network via professional hubs like 
+                        <a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 underline font-medium">Stack Overflow</a> 
+                        and 
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 dark:text-indigo-400 underline font-medium">LinkedIn</a> 
+                        ensures high visibility among top recruiters.
+                    </p>
+                </article>
+
+                <div class="border-t border-slate-200 dark:border-slate-800 pt-8">
+                    <h3 class="text-2xl font-bold mb-6">Frequently Asked Questions (FAQ)</h3>
+                    
+                    <div class="space-y-4">
+                        <!-- FAQ 1 -->
+                        <div class="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden">
+                            <button class="faq-toggle w-full p-5 text-left font-semibold flex justify-between items-center bg-slate-50 dark:bg-slate-800/40 hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer">
+                                <span>What are the best free resources to learn coding?</span>
+                                <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-content hidden p-5 text-sm text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+                                The best free resources to learn coding include freeCodeCamp for web development, Kaggle Learn for machine learning, The Odin Project for full-stack development, and LeetCode for interview preparation. For structured learning, follow roadmaps from roadmap.sh which provide step-by-step guides for different tech careers. DevUp Society curates these resources and provides hands-on project experience.
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden">
+                            <button class="faq-toggle w-full p-5 text-left font-semibold flex justify-between items-center bg-slate-50 dark:bg-slate-800/40 hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer">
+                                <span>How long does it take to become a job-ready developer?</span>
+                                <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-content hidden p-5 text-sm text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+                                On average, dedicating 15 to 20 hours per week consistently can take a motivated beginner from scratch to job-ready within 6 to 12 months, depending on project execution and portfolio quality.
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden">
+                            <button class="faq-toggle w-full p-5 text-left font-semibold flex justify-between items-center bg-slate-50 dark:bg-slate-800/40 hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer">
+                                <span>Are Rumusmu developer utilities completely free to use?</span>
+                                <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                            </button>
+                            <div class="faq-content hidden p-5 text-sm text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+                                Yes! All developer frameworks, utilities, resource hubs, and guides provided by Rumusmu Hub Ltd. are completely free for global developers and open-source contributors.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="https://rumusmu.github.io/Rumusmu.png" class="w-8 h-8 rounded-lg object-cover" alt="Logo">
+                        <span class="text-lg font-bold">Rumusmu Hub Ltd.</span>
+                    </div>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">
+                        Registered in Delaware, USA (Ltd. #8932410). Providing world-class developer utilities and digital marketing frameworks.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm mb-4 uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+                        <li><a href="#home" class="hover:text-indigo-600 transition">Home</a></li>
+                        <li><a href="#learning-paths" class="hover:text-indigo-600 transition">Learning Paths</a></li>
+                        <li><a href="#categories" class="hover:text-indigo-600 transition">Categories</a></li>
+                        <li><a href="#article" class="hover:text-indigo-600 transition">Articles & SEO</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm mb-4 uppercase tracking-wider">Legal & Compliance</h4>
+                    <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+                        <li><a href="#" class="hover:text-indigo-600 transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-indigo-600 transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-indigo-600 transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-indigo-600 transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-indigo-600 transition">Cookie Settings</a></li>
+                        <li><a href="#" class="hover:text-indigo-600 transition">Ltd. Disclaimers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm mb-4 uppercase tracking-wider">Subscribe Newsletter</h4>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Get weekly AI & tool updates directly to your inbox.</p>
+                    <form class="flex gap-2">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl text-sm w-full focus:outline-none focus:ring-2 ring-indigo-500">
+                        <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-xl text-sm font-medium transition cursor-pointer">Join</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-200 dark:border-slate-800 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 Rumusmu Hub Ltd. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 sm:mt-0">
+                    <a href="https://github.com/rumusmu" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600"><i class="fa-brands fa-github text-base"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600"><i class="fa-brands fa-twitter text-base"></i></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600"><i class="fa-brands fa-linkedin text-base"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- COOKIES BANNER -->
+    <div id="cookie-banner" class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-4 sm:max-w-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-2xl shadow-2xl z-50 flex flex-col gap-3 hidden">
+        <div class="flex items-start space-x-3">
+            <i class="fa-solid fa-cookie-bite text-2xl text-amber-500 mt-1"></i>
+            <div>
+                <h4 class="font-bold text-sm">Cookie Notice</h4>
+                <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">
+                    We use cookies to enhance your browsing experience, analyze site traffic, and serve personalized content. Read our <a href="#" class="underline text-indigo-600">Cookie Policy</a>.
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-end space-x-2 mt-2">
+            <button id="accept-cookies" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold rounded-xl transition cursor-pointer">Accept All</button>
+            <button id="decline-cookies" class="px-4 py-2 border border-slate-300 dark:border-slate-700 text-xs font-semibold rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition cursor-pointer">Decline</button>
+        </div>
+    </div>
+
+    <!-- AMP AUTO ADS -->
+    <amp-auto-ads type="adsense" data-ad-client="ca-pub-9700222423349703"></amp-auto-ads>
+
+    <!-- INTERACTIVE SCRIPTS -->
+    <script>
+        // Robust Dark Mode Toggle Handler
+        const themeToggle = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        // Initialize Theme from localStorage or System Preference
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+        } else {
+            htmlElement.classList.remove('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Cookie Consent Banner Handler
+        const cookieBanner = document.getElementById('cookie-banner');
+        const acceptCookies = document.getElementById('accept-cookies');
+        const declineCookies = document.getElementById('decline-cookies');
+
+        if (!localStorage.getItem('cookies_accepted')) {
+            cookieBanner.classList.remove('hidden');
+        }
+
+        acceptCookies.addEventListener('click', () => {
+            localStorage.setItem('cookies_accepted', 'true');
+            cookieBanner.classList.add('hidden');
+        });
+
+        declineCookies.addEventListener('click', () => {
+            localStorage.setItem('cookies_accepted', 'false');
+            cookieBanner.classList.add('hidden');
+        });
+
+        // FAQ Dropdown Toggles
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('fa-chevron-down, i');
+                
+                content.classList.toggle('hidden');
+                if(icon) {
+                    icon.classList.toggle('rotate-180');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
